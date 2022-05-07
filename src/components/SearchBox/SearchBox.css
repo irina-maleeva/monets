@@ -1,0 +1,44 @@
+input {
+    box-sizing: border-box;
+
+    /* position: absolute; */
+    width: 374px;
+    height: 48px;
+    /* left: 52px;
+    top: 147px; */
+
+    border: 1px solid #000000;
+
+}
+
+.search-box__form-submit {
+    /* position: absolute; */
+    width: 120px;
+    height: 48px;
+    /* left: 456px;
+    top: 147px; */
+
+    background: #833AE0;
+
+}
+
+
+.advanced {
+    /* position: absolute; */
+    width: 200px;
+    height: 15px;
+    /* left: 52px;
+    top: 205px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 109%;
+    /* or 15px */
+
+    text-decoration-line: underline;
+
+    color: #000000;
+
+}

@@ -27,7 +27,7 @@ class SearchBox extends Component {
     //         })
     // }
 
-    // expandFiltersHandler = 
+    // expandFiltersHandler = (e)
 
     render() {
         return (
@@ -48,7 +48,7 @@ class SearchBox extends Component {
                         disabled={!this.state.searchLine}>
                         Search
                     </button>
-                    <div>
+                    <div class="advanced">
                         <button onClick={this.expandFiltersHandler}>Advanced filter v </button>
                     </div>
                 </form>

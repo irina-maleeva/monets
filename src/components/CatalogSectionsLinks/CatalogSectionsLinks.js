@@ -14,7 +14,7 @@ class CatalogSectionsLinks extends Component {
                         Show all
                     </button>
                     <div>
-                        <img scr="images/jpeg"></img>
+                        <img scr="../img/South Vietnamese Dong_1.png"></img>
                     </div>
                 </div>
                 <div>
@@ -25,7 +25,7 @@ class CatalogSectionsLinks extends Component {
                         Show all
                     </button>
                     <div>
-                        <img scr="images/jpeg"></img>
+                        <img scr="../img/ISK_2.png"></img>
                     </div>
                 </div>
                 <div>
@@ -36,7 +36,7 @@ class CatalogSectionsLinks extends Component {
                         Show all
                     </button>
                     <div>
-                        <img scr="images/jpeg"></img>
+                        <img scr="../img/Looney_1.png"></img>
                     </div>
                 </div>
             </div>
