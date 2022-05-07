@@ -36,7 +36,7 @@ class SearchBox extends Component {
                     <label className="search-box__form-label">
                         Input field
                         <input
-                            value={this.state.searchLine}
+                            defaultValue={this.state.searchLine}
                             type="text"
                             className="search-box__form-input"
                             onChange={this.searchLineChangeHandler}

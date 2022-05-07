@@ -9,12 +9,11 @@ import { BrowserRouter } from 'react-router-dom';
 
 import store from "./redux/store";
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(
+const rootElement = ReactDOM.createRoot(document.getElementById('root'));
+rootElement.render(
   <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </Provider>
-  , rootElement);
+  </Provider>);
 
