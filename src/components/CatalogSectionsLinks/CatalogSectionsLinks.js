@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class CatalogSectionsLinks extends Component {
     render() {
         return (
-            <div class='CatalogSections'>
+            <div className='CatalogSections'>
                 <div>
                     <h4>
                         Bullion coins
@@ -14,7 +14,7 @@ class CatalogSectionsLinks extends Component {
                         Show all
                     </button>
                     <div>
-                        <img scr="images/jpeg"></img>
+                        <img src="images/jpeg"></img>
                     </div>
                 </div>
                 <div>
@@ -36,7 +36,7 @@ class CatalogSectionsLinks extends Component {
                         Show all
                     </button>
                     <div>
-                        <img scr="images/jpeg"></img>
+                        <img src="images/jpeg"></img>
                     </div>
                 </div>
             </div>
