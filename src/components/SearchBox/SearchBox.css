@@ -9,6 +9,7 @@ input {
 
     border: 1px solid #000000;
 
+
 }
 
 .search-box__form-submit {
@@ -17,11 +18,17 @@ input {
     height: 48px;
     /* left: 456px;
     top: 147px; */
+    margin-left: 30px;
 
     background: #833AE0;
 
+    color: #FFFFFF;
 }
 
+.search-box__form-label {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
 
 .advanced {
     /* position: absolute; */
@@ -29,6 +36,7 @@ input {
     height: 15px;
     /* left: 52px;
     top: 205px; */
+    margin-top: 10px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -38,7 +46,52 @@ input {
     /* or 15px */
 
     text-decoration-line: underline;
+    text-align: left;
 
     color: #000000;
+    background-color: white;
+    border: none;
+    padding: 0;
+}
 
+span {
+    /* position: absolute; */
+    width: 200px;
+    height: 15px;
+    /* left: 52px;
+    top: 127px; */
+
+    /* Заголовок блоков */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 109%;
+    /* or 15px */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.hiddenSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.hiddenSection input {
+    margin-bottom: 20px;
+}
+
+.small {
+    width: 155px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.right {
+    margin-left: 30px;
 }
