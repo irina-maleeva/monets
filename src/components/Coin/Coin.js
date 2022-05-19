@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Coin.css';
 import { Link } from 'react-router-dom';
 import store from '../../redux/store';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 // import { addApiCoins, addApiId } from '../..redux/action';
 
 class Coin extends Component {

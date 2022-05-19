@@ -5,7 +5,8 @@ import isk2 from '../../img/ISK_2.png';
 import SouthVietnam from '../../img/South Vietnamese Dong_1.png';
 import Looney from '../../img/Looney_1.png';
 import { Link } from 'react-router-dom';
-import { ApiRequestCoinsInfo } from '../../ConnectionToServer/ConnectionToServer';
+import store from '../../redux/store';
+// import { ApiRequestCoinsInfo } from '../../ConnectionToServer/ConnectionToServer';
 
 class CatalogSectionsLinks extends Component {
 
@@ -13,18 +14,56 @@ class CatalogSectionsLinks extends Component {
         data: []
     }
 
-    goToBullionList = () => {
-        // const address = 'bullion';
-        // return ApiRequestCoinsInfo(address);
-        return ApiRequestCoinsInfo('bullion');
+    goToBullionList = (e) => {
+        e.preventDefault();
+        fetch('http://localhost:5000/bullion')
+            .then((response) => response.json())
+            .then((data) => {
+                store.dispatch({
+                    type: 'ADD_API_COINS',
+                    payload: {
+                        arrCoins: data,
+                    }
+                })
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            })
+
     }
 
-    goToExclusiveList = () => {
-        return ApiRequestCoinsInfo('exclusive');
+    goToExclusiveList = (e) => {
+        e.preventDefault();
+        fetch('http://localhost:5000/exclusive')
+            .then((response) => response.json())
+            .then((data) => {
+                store.dispatch({
+                    type: 'ADD_API_COINS',
+                    payload: {
+                        arrCoins: data,
+                    }
+                })
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            })
     }
 
-    goToCommemorativeList = () => {
-        return ApiRequestCoinsInfo('commemorative');
+    goToCommemorativeList = (e) => {
+        e.preventDefault();
+        fetch('http://localhost:5000/commemorative')
+            .then((response) => response.json())
+            .then((data) => {
+                store.dispatch({
+                    type: 'ADD_API_COINS',
+                    payload: {
+                        arrCoins: data,
+                    }
+                })
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            })
     }
 
     render() {

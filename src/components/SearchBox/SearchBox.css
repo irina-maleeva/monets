@@ -1,4 +1,4 @@
-input {
+.search-box__form-input {
     box-sizing: border-box;
 
     /* position: absolute; */
@@ -72,7 +72,6 @@ span {
 
     display: flex;
     align-items: center;
-
     color: #000000;
 }
 
@@ -82,10 +81,18 @@ span {
     margin-top: 25px;
 }
 
-.hiddenSection input {
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left select {
     margin-bottom: 20px;
 }
 
+/* .search-box__form-input {
+
+} */
 .small {
     width: 155px;
     margin-left: 5px;

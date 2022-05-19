@@ -15,16 +15,22 @@ class CoinPage extends Component {
             const state = store.getState();
             state.idCoin &&
                 this.setState({
-                    data: state.idCoin[0]
+                    data: state.idCoin
                 });
         });
+        store.dispatch({
+            type: 'AD',
+            payload: {
+                a: 'dd',
+            }
+        })
     }
 
     render() {
         const coin = this.state.data;
         return (
             <>
-                {coin.map((item) => {
+                {coin && coin.map((item) => {
                     <div>
                         <div className="coin" key={item.id}>
                             <div>
@@ -47,34 +53,36 @@ class CoinPage extends Component {
                             <p>{item.paragraph_nine}</p>
                             <p>{item.paragraph_ten}</p>
                             <table>
-                                <tr className='white_row'>
-                                    <td>Issuing Country</td>
-                                    <td>{item.country}</td>
-                                </tr>
-                                <tr>
-                                    <td>Composition</td>
-                                    <td>{item.composition}</td>
-                                </tr>
-                                <tr className='white_row'>
-                                    <td>Quality</td>
-                                    <td>{item.quality}</td>
-                                </tr>
-                                <tr>
-                                    <td>Denomination</td>
-                                    <td>{item.denomination}</td>
-                                </tr>
-                                <tr className='white_row'>
-                                    <td>Year</td>
-                                    <td>{item.issued}</td>
-                                </tr>
-                                <tr>
-                                    <td>Weight</td>
-                                    <td>{item.weight} g</td>
-                                </tr>
-                                <tr className='white_row'>
-                                    <td>Price</td>
-                                    <td>{item.price}$</td>
-                                </tr>
+                                <tbody>
+                                    <tr className='white_row'>
+                                        <td>Issuing Country</td>
+                                        <td>{item.country}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Composition</td>
+                                        <td>{item.composition}</td>
+                                    </tr>
+                                    <tr className='white_row'>
+                                        <td>Quality</td>
+                                        <td>{item.quality}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Denomination</td>
+                                        <td>{item.denomination}</td>
+                                    </tr>
+                                    <tr className='white_row'>
+                                        <td>Year</td>
+                                        <td>{item.issued}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weight</td>
+                                        <td>{item.weight} g</td>
+                                    </tr>
+                                    <tr className='white_row'>
+                                        <td>Price</td>
+                                        <td>{item.price}$</td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <Link to={'/list'}>Back to the list</Link>
                         </div>

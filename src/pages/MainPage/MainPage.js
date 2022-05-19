@@ -5,6 +5,7 @@ import SearchBox from '../../components/SearchBox/SearchBox';
 import CatalogSectionsLinks from '../../components/CatalogSectionsLinks/CatalogSectionsLinks';
 
 class MainPage extends Component {
+
     render() {
         return (
             <div>

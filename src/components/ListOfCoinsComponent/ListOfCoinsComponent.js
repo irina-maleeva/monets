@@ -10,16 +10,27 @@ class ListOfCoinsComponent extends Component {
     }
 
     componentDidMount = () => {
+
+        // fetch('http://localhost:5000/bullion')
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data)
+        //         this.setState({
+        //             bullion: arrCoins
+        //         })
+        //     })
+
         store.subscribe(() => {
             const state = store.getState();
             state.arrCoins && this.setState({
-                data: state.arrCoins[0]
+                data: state.arrCoins
             });
         });
     }
 
     render() {
         const coins = this.state.data;
+        console.log(coins);
         const { composition, country, quality, priceMin, priceMax, yearMin, yearMax } = this.props;
         return (
             <div>

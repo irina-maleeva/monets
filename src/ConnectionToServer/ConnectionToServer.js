@@ -12,7 +12,7 @@ export function ApiRequestCoinsInfo(address) {
             store.dispatch({
                 type: 'ADD_API_COINS',
                 payload: {
-                    Coins: data,
+                    arrCoins: data,
                 }
             })
         })
@@ -48,7 +48,7 @@ export function ApiRequestListCoinsSearchInput(input) {
             store.dispatch({
                 type: 'ADD_API_COINS',
                 payload: {
-                    Coins: data,
+                    arrCoins: data,
                 }
             })
         })
