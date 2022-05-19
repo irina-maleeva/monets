@@ -1,0 +1,54 @@
+.catalogSections {
+    display: flex;
+    flex-direction: row;
+    margin-top: 85px;
+    /* Justify-content: space-between; */
+}
+
+.SectionHead {
+    /* position: absolute;
+    left: 4.06%;
+    right: 72.5%; */
+    /* top: 38.89%;
+    bottom: 56.94%; */
+
+    margin-top: 64px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    background-color: white;
+}
+
+.showAll {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 109%;
+    /* or 15px */
+
+    text-align: left;
+
+    color: #000000;
+    background-color: white;
+    border: none;
+    margin-left: 0;
+
+}
+
+img {
+    width: 214px;
+}
+
+.sectionDiv {
+    width: 300px;
+    margin-right: 104px;
+}

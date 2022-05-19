@@ -1,0 +1,11 @@
+.white-row {
+    background-color: white;
+}
+
+.grey-block {
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+img {
+    width: 300px;
+}
